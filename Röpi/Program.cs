@@ -49,7 +49,7 @@ class Program
     static void Elso(){
         int num;
 
-        Print("Kérem az első számot: ");
+        Print("Kérem a számot: ");
         num = GetInt();
 
         if (num < 0){
