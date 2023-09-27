@@ -43,6 +43,7 @@ class Program
     {
         Elso();
         Masodik();
+        Harmadik();
         Wait();
     }
     static void Elso(){
@@ -87,12 +88,12 @@ class Program
         Print("Kérem a kort: ");
         kor = GetInt();
 
-        if (6 < kor && kor < 12 && 1 < evfolyam && evfolyam < 6){
+        if (6 <= kor && kor <= 12 && 1 <= evfolyam && evfolyam <= 6){
             Print("Az iskolás korú diák");
-        } else if (13 < kor && kor > 18 && 7 < evfolyam && evfolyam < 12){
-            Print("Középiskolás diák.")
-        } else if (kor > 0 || evfolyam > 0){
-            Print("Eroor")
+        } else if (13 <= kor && kor <= 18 && 7 <= evfolyam && evfolyam <= 12){
+            Print("Középiskolás diák.");
+        } else if (kor < 0 || evfolyam < 0){
+            Print("Eroor");
         }
         else {
             Print("Nem iskolás korú diák.");
